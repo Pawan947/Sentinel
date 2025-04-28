@@ -1191,18 +1191,12 @@
 
         // Download functionality
         function downloadSoftware() {
-            const message = "Hi, I'm interested in downloading SentinelScope. Please provide the download link and activation details.";
-            const encodedMessage = encodeURIComponent(message);
+            
             const instagramUrl = "https://www.instagram.com/pawan_.387?igsh=MWdtNjV6NXM1YjlrMQ==";
-
-            navigator.clipboard.writeText(message).then(() => {
-                alert("Message copied to clipboard. Paste this message to our Instagram chat:\n\n" + message);
-                window.open(instagramUrl, '_blank');
-            }).catch(err => {
-                console.error('Could not copy text: ', err);
-                alert("Send this message on Instagram:\n\n" + message);
-                window.open(instagramUrl, '_blank');
-            });
+            const downloadLink = "https://github.com/Pawan947/Sentinel/releases/download/sentinal_scape_beta_early/SentinelScope.zip";
+            
+                
+                window.open(downloadLink, '_blank');
         }
     </script>
 </body>
